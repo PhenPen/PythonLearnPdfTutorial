@@ -1,0 +1,36 @@
+
+
+# suppose you want to take input from the user until they type done.You could write
+
+while True:
+    line = input(">")
+    if line == "done":
+        break
+    print(line)
+print("Done !")
+
+#* Can I use enter on the keyboard instead of done ?
+
+while True:
+    line = input(">")
+    if line == "": #for if the enter  key is pressed on the keyboard 
+        break
+    print(line)
+print("Done !")
+#*Can I make the ">" blink ?
+
+while True:
+ line = input(">")
+ if line[0] == "#":
+    continue
+ if line == "done":
+    break
+ print(line)
+print("Done!")
+
+nums = [2,5,7,9,123,89,5]
+maxNum = 0
+for num in nums :
+   if num > maxNum :
+      maxNum = num
+print(f"Maximum is {maxNum}")
