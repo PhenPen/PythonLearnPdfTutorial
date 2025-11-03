@@ -1,9 +1,10 @@
 """ All methods/ functions for strings"""
 # dir() function is used to get all the methods for a string or other types such as int eg dir(6)
 
->> print(dir(stuff)
-)
-[... 'capitalize', 'casefold', 'center', 'count', 'encode',
+stuff = "hello world"
+
+print(dir(stuff))
+strList = ['capitalize', 'casefold', 'center', 'count', 'encode',
 
 'endswith', 'expandtabs', 'find', 'format', 'format_map',
 

@@ -7,5 +7,7 @@ for i in range(len(numbers)):
 
 
 t = [23,467,12,46789,5,23,3334,2,3,45]
-A = t.sort()
-print(A)
+t.sort()
+t.reverse()
+
+print(t)
