@@ -22,7 +22,7 @@ newFilePath = Path(filePath)/f"{fileName}.{fileFormat}"
 
 with open(newFilePath, mode="r", encoding="utf-8") as f :
     for line in f:
-        print(line.upper())
+        print(line.upper().rstrip())
 
 
 
