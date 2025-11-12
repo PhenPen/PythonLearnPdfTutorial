@@ -41,3 +41,6 @@ lst = list(d.items())
 # print(lst)
 lst.sort() #lst.sort() returns None as it is not a string so we do not assign it to lst again
 print(lst)
+
+
+lambda x : x + 1

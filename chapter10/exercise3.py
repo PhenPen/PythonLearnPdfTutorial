@@ -2,7 +2,6 @@
 
 
 from pathlib import Path
-from string import punctuation
 
 d = dict()
 lst = list()
