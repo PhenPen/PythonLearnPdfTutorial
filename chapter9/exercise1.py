@@ -8,7 +8,7 @@ filePath = Path(r"C:\Coding\Projects\VsCode\tutsPhen\pdfTuts\pythonLearnpdf\lear
 
 d = dict()
 
-print(f"{'Words':*^78}")
+print(f"{'Words':*^78}") # decorative print statement
 with open(filePath,mode="r",encoding="utf-8") as f:
     for line in f:
        words = line.strip().strip('/n').split()

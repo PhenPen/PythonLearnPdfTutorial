@@ -23,7 +23,7 @@ with open(filePath,mode="r",encoding="utf-8") as f:
                 print("Adding word:", word)
                 uniqueWords.append(word)
     
-    uniqueWords.sort()
+    uniqueWords.sort() # Lists is mutable , so it returns None, so here it's not passed into a variable
     print()
     print(f"Unique words in {filePath.name} sorted alphabetically")
     print(f"{"#":*^50}")

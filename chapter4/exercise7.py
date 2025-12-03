@@ -3,7 +3,7 @@ called computegrade that takes a score as its parameter and returns a grade as a
 string."""
 
 #Former index : 3.3
-def compute_grade(score = float) :
+def compute_grade(score : float) :
     if score >= 1.0 :
         return "Bad score"
     elif score >= 0.9 :

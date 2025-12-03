@@ -7,7 +7,7 @@ try:
         for line in file:
             line= line.strip()
             # print(line) #For debugging
-            email = re.findall(r"[a-zA-Z0-9]\S*@\S*[a-zA-Z]",line) #Must use backslashes not forward slashes
+            email = re.findall(r"[a-zA-Z0-9]+\S*@\S*[a-zA-Z]",line) #Must use backslashes not forward slashes
             #if len(email) >0 : print(email)
             xNum = re.findall(r"^X-\S+: d+",line)
 except FileNotFoundError:

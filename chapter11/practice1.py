@@ -20,3 +20,4 @@ with open(filePath,mode="w",encoding="utf-8") as f:
     for funcMethod in f:
         for item in reDir:
             f.write(f"{item}\n")
+

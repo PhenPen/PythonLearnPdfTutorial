@@ -2,7 +2,7 @@
 
 # Former pay computation index = 3.1
 
-def compute_pay(hours = float,rate = float)  :
+def compute_pay(hours :float,rate :float)  :
     if hours > 40 :
      hoursOvertime = hours - 40
      grossPay = (40 * rate) + (hoursOvertime * rate * 1.5)

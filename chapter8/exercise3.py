@@ -12,7 +12,7 @@ for line in fHand:
 
     #if len(words) <3 : continue
     #if words[0] != "From" : continue
-    if len(words) <3 or words[0] != "From" : continue
+    if len(words) <3 or words[0] != "From" : continue # used guardian pattern here 
     print(words[2])
 
 fHand.close()
