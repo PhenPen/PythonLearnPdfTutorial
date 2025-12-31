@@ -9,7 +9,7 @@ ctx.verify_mode = ssl.CERT_NONE
 
 URL : str = input("Enter URL : ")
 with urlopen(URL, context=ctx) as file:
-    html = file.read()
+    html = file.read()  #Note that this is still in bytes format but beautifulsoup can handle it
 
 soup = BeautifulSoup(html,"html.parser")
 anchorTags = soup('a')

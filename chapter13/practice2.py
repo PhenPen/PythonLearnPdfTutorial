@@ -12,10 +12,11 @@ data = """<person>
 
 tree = ET.fromstring(data)
 print()
-# print(f"Name: {tree.find("name").text}") #This lines have issues 
-print(f"Name: {tree.findtext("name")}")
-# print(f"email: {tree.find("email").get('hide')}") #This lines have issues 
-# print(f"email: {tree.find("email").get}") #This lines have issues 
+# Use findtext to avoid None attribute errors if element missing
+print(f"Name: {tree.findtext('name')}")
+
+email_el = tree.find('email')
+print(f"email hide?: {email_el.get('hide') if email_el is not None else None}")   #This fixed the former issue of having issues when calling attributes 
 
 
 # Having issues with line 14 and 15 , trying to call the attributes of the tag 

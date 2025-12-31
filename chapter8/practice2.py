@@ -32,7 +32,7 @@ for f in builtins_func:
         working_func.append(f)
         
 for f in builtins_func:
-    func = getattr(builtins)
+    func = getattr(builtins,f)
     try:
         sig = inspect.signature(func)
     except Exception:
@@ -43,3 +43,7 @@ for f in builtins_func:
 
 print(working_func,func_sig)
         
+print(f'This is builtin functions that work with list: {working_func}')
+print()
+print(f'This is their signatures: {func_sig}')
+print()

@@ -17,7 +17,6 @@ print(helloWorld.find("Hello"))
 reDir = ((dir(re)))
 
 with open(filePath,mode="w",encoding="utf-8") as f:
-    for funcMethod in f:
-        for item in reDir:
-            f.write(f"{item}\n")
+    for item in reDir:
+        f.write(f"{item}\n")
 

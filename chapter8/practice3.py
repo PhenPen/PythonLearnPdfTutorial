@@ -24,7 +24,7 @@ errors = []   # store (name, error_type, error_message)
 # 3) try each builtin
 for name in builtin_names:
     if name in SKIP:
-        # print("skipping", name)
+        print("skipping", name)
         continue
 
     func = getattr(builtins, name)

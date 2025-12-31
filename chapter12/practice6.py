@@ -1,5 +1,4 @@
 from urllib import request
-import requests
 from urllib.error import URLError, HTTPError
 import ssl # SSL Module
 import re  # Regular Expressions Module

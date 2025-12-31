@@ -19,3 +19,9 @@ s.translate(str.maketrans("","","")) # the first "" shows the old letter or the 
 # The last quotation is for removing things completely can be left blank if nothing is to be removed 
 
 
+# To MERGE DICTIONARIES
+X = {'A' : 'a','B' : 'b'}
+Y = {'C' : 'c', 'D' : 'd'}
+Z = {**X,**Y} #Merge X dict and Y dict together
+# Note if two dictionaries keys are the same, it takes the key from right or the second dictionary  
+print(Z)

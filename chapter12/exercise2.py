@@ -13,7 +13,9 @@ count_char = 0 # For total count of characters
 # For Url, Port and Domain of Url
 while True:
     url = input("Enter Url (Type q to quit): ")
-    port = (input("Enter Port (Press Enter if you don't know the port): "))
+    if url.lower == "q":
+        exit()
+    port = input("Enter Port (Press Enter if you don't know the port): ")
 
     # Port Checking and Conversion
     if port != "":
@@ -21,20 +23,17 @@ while True:
     
 
     # Regex for Host/Domain from URL
-    test = re.findall(r"^http[s]?://([^/]+)",url)
+    test = re.search(r"^http[s]?://([^/]+)",url)
     # print(test) # For Debugging Regex
 
     #Invalid Error and Program Exit Checking
-    if test == []: # findall returns an empty list instead of None if nothing is found
+    if test is None: # findall returns an empty list instead of None if nothing is found
         print("Not a valid url. Try again")
-    elif url.lower == "q":
-        exit()
     else:
         break
 
 # Getting Host/Domain from URL
-for te in test: # Regex Match and Search was having issues extracting group so I used findall and a for loop
-    url_domain = te
+url_domain = test.group(1)
 
 # Checking for Port
 if port == "" and url.startswith("https"):
